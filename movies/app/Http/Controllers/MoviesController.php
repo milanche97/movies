@@ -12,7 +12,7 @@ class MoviesController extends Controller
         return view('index', compact('movies'));
     }
     public static function show($id){
-        $movies = Movies::find($id);
-        return view('show', compact('movies'));
+        $movie = Movies::find($id);
+        return view('show', compact('movie'));
     }
 }
