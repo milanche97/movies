@@ -33,3 +33,6 @@
         <input type="text" class="form-control" id="content" name="content"/>
         <button type="submit" class="btn btn-success">Add comment</button>
 </form>
+@foreach(explode(', ',($movie->genre),100) as $genre)
+<a href = "{{route('genre-movies', ['genre' => $genre])}}">{{$genre}}</a>
+@endforeach
