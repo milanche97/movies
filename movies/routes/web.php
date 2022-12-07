@@ -20,3 +20,11 @@ Route::get('/', function () {
 
 Route::get('/movies', [MoviesController::class, 'index']);
 Route::get('/movies/{id}', [MoviesController::class, 'show'])->name('single-post');
+
+Route::get('/create', [MoviesController::class, 'create']);
+Route::post('/movies', [MoviesController::class, 'store']);
+
+
+
+// Route::get('/movies/create', [MoviesController::class, 'create']);
+// Route::post('/movies', [MoviesController::class, 'store']);

@@ -11,5 +11,5 @@
         Year: {{ $movie->year }}
     </p>
     <p>
-        Soryline: {{ $movie->storyline }}
+        Storyline: {{ $movie->storyline }}
     </p>
