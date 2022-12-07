@@ -27,3 +27,9 @@
       </ul>
     </div>
   @endif
+  <form method="POST" action="{{ url('/comments/add/' . $movie->id) }}">
+    {{ csrf_field() }}
+        <label for="content">Comment</label>
+        <input type="text" class="form-control" id="content" name="content"/>
+        <button type="submit" class="btn btn-success">Add comment</button>
+</form>

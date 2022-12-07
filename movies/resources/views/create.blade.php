@@ -2,7 +2,6 @@
 
 
 <form method="POST" action="/movies">
-    {{-- <form method="POST" action="{{ route('/create') }}"> --}}
 
     @csrf
 
